@@ -2,7 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "rn-yookassa-sdk": ["./src/index"]
+      "rn-yookassa-pay": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

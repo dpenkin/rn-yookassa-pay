@@ -6,7 +6,7 @@ import {
   YooKassaError,
   ErrorCodesEnum,
   PaymentMethodTypesEnum,
-} from 'rn-yookassa-sdk';
+} from 'rn-yookassa-pay';
 import { CLIENT_APPLICATION_KEY, CONFIRMATION_URL, SHOP_ID } from './constants';
 
 export default function App() {

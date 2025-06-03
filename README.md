@@ -9,14 +9,14 @@ Install
 =======
 
 ```bash
-yarn add rn-yookassa-sdk
+yarn add rn-yookassa-pay
 ```
 
 Usage
 =====
 
 ```ts
-import { tokenize, confirmPayment, dismiss, YooKassaError, ErrorCodesEnum, PaymentMethodTypesEnum } from 'rn-yookassa-sdk';
+import { tokenize, confirmPayment, dismiss, YooKassaError, ErrorCodesEnum, PaymentMethodTypesEnum } from 'rn-yookassa-pay';
 
 
 try {

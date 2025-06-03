@@ -11012,9 +11012,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rn-yookassa-sdk-example@workspace:example":
+"rn-yookassa-pay-example@workspace:example":
   version: 0.0.0-use.local
-  resolution: "rn-yookassa-sdk-example@workspace:example"
+  resolution: "rn-yookassa-pay-example@workspace:example"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/preset-env": ^7.25.3
@@ -11033,9 +11033,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"rn-yookassa-sdk@workspace:.":
+"rn-yookassa-pay@workspace:.":
   version: 0.0.0-use.local
-  resolution: "rn-yookassa-sdk@workspace:."
+  resolution: "rn-yookassa-pay@workspace:."
   dependencies:
     "@commitlint/config-conventional": ^19.6.0
     "@eslint/compat": ^1.2.7

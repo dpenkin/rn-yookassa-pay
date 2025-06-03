@@ -1,5 +1,5 @@
 {
-  "name": "rn-yookassa-sdk",
+  "name": "rn-yookassa-pay",
   "version": "0.1.0",
   "description": "React Native Pay Module SDK Integration.",
   "main": "./lib/module/index.js",
@@ -32,7 +32,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace rn-yookassa-sdk-example",
+    "example": "yarn workspace rn-yookassa-pay-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -47,14 +47,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dpenkin/rn-yookassa-sdk.git"
+    "url": "git+https://github.com/dpenkin/rn-yookassa-pay.git"
   },
   "author": "dpenkin <di.penkin@yandex.ru> (https://github.com/dpenkin)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dpenkin/rn-yookassa-sdk/issues"
+    "url": "https://github.com/dpenkin/rn-yookassa-pay/issues"
   },
-  "homepage": "https://github.com/dpenkin/rn-yookassa-sdk#readme",
+  "homepage": "https://github.com/dpenkin/rn-yookassa-pay#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
