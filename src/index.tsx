@@ -1,5 +1,3 @@
-import RnYookassaSdk from './NativeRnYookassaSdk';
-
-export function multiply(a: number, b: number): number {
-  return RnYookassaSdk.multiply(a, b);
-}
+export * from './types';
+export * from './classes';
+export * from './functions';

@@ -1,3 +1,9 @@
+allprojects {
+    repositories {
+        maven {url 'https://developer.huawei.com/repo/'}
+    }
+}
+
 buildscript {
     ext {
         buildToolsVersion = "35.0.0"

@@ -1,4 +1,7 @@
 buildscript {
+ // Buildscript is evaluated before everything else so we can't use getExtOrDefault
+ def kotlin_version = rootProject.ext.has("kotlinVersion") ? rootProject.ext.get("kotlinVersion") : project.properties["RnYookassaSdk_kotlinVersion"]
+
   ext.getExtOrDefault = {name ->
     return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['RnYookassaSdk_' + name]
   }
@@ -73,7 +76,11 @@ def kotlin_version = getExtOrDefault("kotlinVersion")
 
 dependencies {
   implementation "com.facebook.react:react-android"
+  implementation 'io.card:android-sdk:5.5.1'
+  implementation 'androidx.preference:preference:1.1.1'
+  implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation "ru.yoomoney.sdk.kassa.payments:yookassa-android-sdk:7.1.0"
 }
 
 react {

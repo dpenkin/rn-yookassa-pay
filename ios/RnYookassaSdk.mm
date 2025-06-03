@@ -1,18 +1,13 @@
-#import "RnYookassaSdk.h"
+#import <React/RCTViewManager.h>
+#import <Foundation/Foundation.h>
+#import "RnYookassaSdk-Bridging-Header.h"
 
-@implementation RnYookassaSdk
-RCT_EXPORT_MODULE()
+@interface RCT_EXTERN_MODULE(RnYookassaSdk, RCTViewManager)
 
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(a * b);
-
-    return result;
-}
-
-- (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
-    (const facebook::react::ObjCTurboModule::InitParams &)params
-{
-    return std::make_shared<facebook::react::NativeRnYookassaSdkSpecJSI>(params);
-}
+RCT_EXTERN_METHOD(tokenize:(NSDictionary *)params
+                  callbacker:(RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(confirmPayment:(NSDictionary *)params
+                  callbacker:(RCTResponseSenderBlock)callback)
+RCT_EXTERN_METHOD(dismiss)
 
 @end
